@@ -1,43 +1,67 @@
-/* Stylen van de blokken en centrereren */
 
-body {
-  font-family: sans-serif;
-  background: yellow;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight: bold;
+
 }
 
-main {
-  margin: 0 auto;
-  width: 50vw;
+.images-1{
+    
+    display: flex;
+    justify-content: space-evenly; 
 }
 
-article {
-  background: white;
-  padding: 2em;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-strong {
-  font-family: monospace;
+img{
+    width: 200px;
+    height: auto;
+    
+    
 }
 
 
+body{
+    background-color: antiquewhite;
+}
 
-/* 👇 Schrijf hieronder je eigen CSS
+h1 {
+    display: flex;
+    justify-content: center;
+}
 
-/* 1. Gebruik de Type selector */
-/* p em {
-  color: olivedrab;
-} */
+a{
+    text-decoration: none;
+}
 
-/* 2. Gebruik de Class selector */
-/* p.tomato{color: tomato;} */
+ ul{
+   display: flex;
+   list-style-type: none;
+   margin: 0;
+   padding: 0%;
+   justify-content: space-evenly;
+    
+}
 
-/* 3. Gebruik de ID selector */
-/* p#goldenrod {color: goldenrod;} */
+li:hover{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
 
-/* 4. Lijstje in Lijstje */
-ul ul {color: peachpuff;}
+li:active {
+    background-color: darkgreen;
+}
 
-/* 5. De eerste */
-article
+
+
+
+
+
+
+
+
+
