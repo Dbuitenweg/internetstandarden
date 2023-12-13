@@ -1,60 +1,229 @@
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
-    font-style:normal;
-    font-weight: bold;
 
-}
+/* alles pagina*/
 
-.images-1{
-    
-    display: flex;
-    justify-content: space-evenly; 
-}
-
-img{
-    width: 200px;
-    height: auto;
-    
-    
-}
-
-
-body{
+body{           /* aanpassingen doen in de body*/
     background-color: antiquewhite;
 }
 
-h1 {
+main{
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+    height: fit-content;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+    
+}
+
+h1 {            /* de h1 zelf aanpassen*/
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+
+.head{
+    display: flex;
+    list-style-type: none;
+    margin: -10px;
+    padding: 40px;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+
+.head a{
+    text-decoration: none;  /*de lijnen weg halen van de ancurs*/
+    color: black;
+    font-size: larger;
+
+}
+
+.head li a:hover{
+    padding: 10px 20px;
+    font-size: 25px;
+    color:red;
+    
+}
+ 
+.head li a:active {
+    
+    color:darkred;
+    padding: 10px 20px;
+    margin: 10px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+/*eng alles pagina*/  
+
+
+
+
+
+
+
+
+/* home pagina*/
+
+.introductie h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+
+
+.overzicht h2 {
     display: flex;
     justify-content: center;
 }
 
-a{
-    text-decoration: none;
-}
 
- ul{
-   display: flex;
-   list-style-type: none;
-   margin: 0;
-   padding: 0%;
-   justify-content: space-evenly;
+
+
+
+
+
+
+
+
+
+
+/*eng home pagina*/
+
+
+
+
+
+
+
+/* werk pagina*/
+
+
+
+/*eng werk pagina*/
+
+
+
+
+
+
+
+
+
+/* about me pagina*/
+
+
+
+
+
+/*eng about me pagina*/
+
+
+
+
+
+
+
+/* contact pagina*/
+
+.social{
+    list-style-type: none; /* de bullet points weg halen*/
+    display: flex;  /* flex box gebruiken voor columen*/
+    flex-direction: column;
+    align-items: start;
     
 }
 
-li:hover{
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; 
+.social li{
+    padding: 10px;
+    
 }
 
-li:active {
-    background-color: darkgreen;
+.social a{
+    color: black;
 }
+
+.social-media h2{
+    display: flex;
+    justify-content:start ;
+    padding-left: 50px;
+}
+
+
+
+.contact{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact li{
+    border: 1px solid;
+    padding: 10px;
+    
+}
+
+.contact h2 {
+    padding-top: 50px;
+}
+
+.input-field{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 0;
+    border: 1px solid blue;
+    border-radius: 14px;
+    outline: none;
+    display: block;
+}
+
+.input-field-textarea{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 0;
+    border: 1px solid blue;
+    border-radius: 14px;
+    outline: none;
+    display: block;
+    
+}
+
+
+
+
+
+
+
+
+
+/*eng contact pagina*/
+
+
+
+
+
 
 
 
