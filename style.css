@@ -8,7 +8,6 @@ body{           /* aanpassingen doen in de body*/
 
 main{
     width: 100%;
-    margin-top: 50px;
     float: left;
     height: fit-content;
     text-align: center;
@@ -17,24 +16,22 @@ main{
     
 }
 
-@media screen and(max-width:768pc) {
-    body{
-        width: 90%;
-    }
+.body1, .body2, .body3{
+    margin-left: 150px;
+    margin-right: 150px;
 
-    header, footer{
-        padding: 5px;
-    }
+}
 
-    main{
-        padding: 10px;
+@media screen and (max-width: 800px){
+    .body1, .body2, .body3{
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 }
 
 h1 {            /* de h1 zelf aanpassen*/
     display: flex;
     justify-content: center;
-    padding: 50px;
 }
 
 h2{
@@ -54,14 +51,13 @@ h3{
     justify-content: space-evenly;
     background-color: #f0f0f0;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);    
 }
 
 
 
 .head a{
-    text-decoration: none;  /*de lijnen weg halen van de ancurs*/
+    text-decoration: none;  /*de lijnen weg halen van de anchors*/
     color: black;
     
 
@@ -81,25 +77,7 @@ h3{
     margin: 10px;
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*eng alles pagina*/  
-
-
-
-
-
-
+/*end alles pagina*/  
 
 
 /* home pagina*/
@@ -107,7 +85,7 @@ h3{
 .introductie h2{
     display: flex;
     justify-content: center;
-   
+    padding-top: 0;
 
 }
 
@@ -118,17 +96,14 @@ h3{
     display: flex;
     justify-content: center;
     
+    
 }
 
 
-.body1{
-    margin-left: 150px;
-    margin-right: 150px;
 
-}
 
 .ibiza img{
-    width: 80%;
+    width: 50%;
     height: auto;
    border-radius: 10px;
 }
@@ -137,63 +112,40 @@ h3{
     padding-top: 5vh;
 }
 
+@media screen and (max-width: 1000px){
+    .ibiza img{
+        width: 80%;
+        height: auto;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*eng home pagina*/
-
-
-
-
-
-
+/*end home pagina*/
 
 /* werk pagina*/
 
-.body2{
-    margin-left: 150px;
-    margin-right: 150px;
-}
 
-.phyton-photo img{
-    width: 80%;
+
+.phyton-photo img, .pathe-photo img, .burger-photo img{
+    width: 50%;
     height: auto;
-   border-radius: 10px;
+    border-radius: 10px;
 }
 
-.phyton-photo{
-    padding-top: 10%;
+.phyton-photo, .pathe-photo, .burger-photo{
+    padding-top: 5%;
 }
 
+@media  screen and (max-width:1000px) {
+    .phyton-photo img, .pathe-photo img, .burger-photo img{
+        width: 80%;
+        height: auto;
+    }
+}
 
-
-
-
-/*eng werk pagina*/
-
-
-
-
-
-
-
-
+/*end werk pagina*/
 
 /* about me pagina*/
-.body3{
-    margin-left: 150px;
-    margin-right: 150px;
 
-}
 
 .sunset img{
     width: 80%;
@@ -201,16 +153,7 @@ h3{
     border-radius: 10px;
 }
 
-
-
-
-/*eng about me pagina*/
-
-
-
-
-
-
+/*end about me pagina*/
 
 /* contact pagina*/
 
@@ -219,12 +162,10 @@ h3{
     display: flex;  /* flex box gebruiken voor columen*/
     flex-direction: column;
     align-items: start;
-    
 }
 
 .social li{
     padding: 10px;
-    
 }
 
 .social a{
@@ -237,8 +178,6 @@ h3{
     padding-left: 50px;
 }
 
-
-
 .contact{
     list-style-type: none;
     display: flex;
@@ -249,7 +188,6 @@ h3{
 .contact li{
     border: 1px solid;
     padding: 10px;
-    
 }
 
 .contact h2 {
@@ -281,7 +219,6 @@ h3{
     border-radius: 14px;
     outline: none;
     display: block;
-    
 }
 
 .textarea ::placeholder{
@@ -301,7 +238,6 @@ h3{
     width: 25%;
 }
 
-
 .planten{
     display: flex;
 }
@@ -317,15 +253,7 @@ h3{
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-/*eng contact pagina*/
+/*end contact pagina*/
 
 
 
