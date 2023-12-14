@@ -17,6 +17,20 @@ main{
     
 }
 
+@media screen and(max-width:768pc) {
+    body{
+        width: 90%;
+    }
+
+    header, footer{
+        padding: 5px;
+    }
+
+    main{
+        padding: 10px;
+    }
+}
+
 h1 {            /* de h1 zelf aanpassen*/
     display: flex;
     justify-content: center;
