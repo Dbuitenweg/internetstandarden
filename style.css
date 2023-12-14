@@ -49,18 +49,18 @@ h3{
 .head a{
     text-decoration: none;  /*de lijnen weg halen van de ancurs*/
     color: black;
-    font-size: larger;
+    
 
 }
 
-.head li a:hover{
+.head a:hover{
     padding: 10px 20px;
     font-size: 25px;
     color:red;
     
 }
  
-.head li a:active {
+.head a:active {
     
     color:darkred;
     padding: 10px 20px;
@@ -150,9 +150,17 @@ h3{
     margin-right: 150px;
 }
 
-.categorieen h2{
-    
+.phyton-photo img{
+    width: 80%;
+    height: auto;
+   border-radius: 10px;
 }
+
+.phyton-photo{
+    padding-top: 10%;
+}
+
+
 
 
 
@@ -176,6 +184,7 @@ h3{
 .sunset img{
     width: 80%;
     height: auto;
+    border-radius: 10px;
 }
 
 
@@ -220,6 +229,7 @@ h3{
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
 }
 
 .contact li{
@@ -275,6 +285,22 @@ h3{
     border: none;
     cursor: pointer;
     width: 25%;
+}
+
+
+.planten{
+    display: flex;
+}
+
+.planten-right{
+    margin-left: 70%;
+    order: 1;
+}
+
+.planten-right img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
 }
 
 
