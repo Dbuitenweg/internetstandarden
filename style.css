@@ -12,7 +12,7 @@ main{
     float: left;
     height: fit-content;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 50px;
     
 }
@@ -23,6 +23,13 @@ h1 {            /* de h1 zelf aanpassen*/
     padding: 50px;
 }
 
+h2{
+    padding-top: 5vh;
+}
+
+h3{
+    padding-top: 3vh;
+}
 
 
 .head{
@@ -70,6 +77,8 @@ h1 {            /* de h1 zelf aanpassen*/
 
 
 
+
+
 /*eng alles pagina*/  
 
 
@@ -84,16 +93,36 @@ h1 {            /* de h1 zelf aanpassen*/
 .introductie h2{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+   
 
 }
+
 
 
 
 .overzicht h2 {
     display: flex;
     justify-content: center;
+    
 }
+
+
+.body1{
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.ibiza img{
+    width: 80%;
+    height: auto;
+   border-radius: 10px;
+}
+
+.ibiza{
+    padding-top: 5vh;
+}
+
 
 
 
@@ -116,6 +145,15 @@ h1 {            /* de h1 zelf aanpassen*/
 
 /* werk pagina*/
 
+.body2{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.categorieen h2{
+    
+}
+
 
 
 /*eng werk pagina*/
@@ -129,7 +167,16 @@ h1 {            /* de h1 zelf aanpassen*/
 
 
 /* about me pagina*/
+.body3{
+    margin-left: 150px;
+    margin-right: 150px;
 
+}
+
+.sunset img{
+    width: 80%;
+    height: auto;
+}
 
 
 
@@ -182,6 +229,9 @@ h1 {            /* de h1 zelf aanpassen*/
 }
 
 .contact h2 {
+    display: flex;
+    justify-content:start ;
+    padding-left: 50px;
     padding-top: 50px;
 }
 
@@ -208,6 +258,23 @@ h1 {            /* de h1 zelf aanpassen*/
     outline: none;
     display: block;
     
+}
+
+.textarea ::placeholder{
+    display: flex;
+    align-items: flex-start;
+}
+
+.btnsubmit{
+    border-radius: 20px;
+    color: white;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: blue;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
 }
 
 
