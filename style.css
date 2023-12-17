@@ -3,7 +3,7 @@
 /* alles pagina*/
 
 body{           /* aanpassingen doen in de body*/
-    background-color: antiquewhite;
+    background:linear-gradient(rgb(215, 98, 98),white)
 }
 
 main{
@@ -11,8 +11,9 @@ main{
     float: left;
     height: fit-content;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 50px;
+    letter-spacing: 0.1rem;
     
 }
 
@@ -91,6 +92,11 @@ h3{
 }
 
 
+.first video{
+    width: 10%;
+    height: auto;
+}
+
 
 
 .overzicht h2 {
@@ -132,7 +138,7 @@ h3{
     box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
     padding: 10px;
     margin-top: 40px;
-    background-color:rgba(183, 169, 153, 0.605);
+    background-color:rgba(197, 194, 191, 0.605);
     border-radius: 10px;
 }
 
@@ -149,7 +155,7 @@ h3{
 
 .pathe-project{
     background-image: url(img/pathe-logo2.png);
-    color: green
+    color: rgb(0, 0, 0)
 }
 
 .heel-holland-kookt{
@@ -163,11 +169,11 @@ h3{
 }
 
 .pathe-project, .heel-holland-kookt, .albert-heijn-wk{
-    border: 1px solid black;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
     padding: 10px;
     margin-top: 50px;
     flex:1;
+    border-radius: 10px;
 }
 
 .pathe-photo img{
@@ -260,8 +266,18 @@ h3{
     align-items: start;
 }
 
+@media screen and (max-width: 400px){
+    .social{
+        font-size: smaller;
+    }
+}
+
+    
+
+
 .social li{
     padding: 10px;
+    margin-left: -30px;
 }
 
 .social a{
@@ -274,25 +290,12 @@ h3{
     margin-left: 5%;
 }
 
-.contact{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-top: -150px;
-    
-}
-
-.contact li{
-    border: 1px solid;
-    padding: 10px;
-}
 
 .contact h2 {
     display: flex;
     justify-content:start ;
     margin-left: 0%;
-    padding-top: 50px;
+    
 }
 
 .input-field{
@@ -301,7 +304,7 @@ h3{
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 0;
-    border: 1px solid blue;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 14px;
     outline: none;
     display: block;
@@ -313,7 +316,7 @@ h3{
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 0;
-    border: 1px solid blue;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 14px;
     outline: none;
     display: block;
@@ -326,31 +329,37 @@ h3{
 
 .btnsubmit{
     border-radius: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 18px;
     padding: 10px;
-    background-color: blue;
-    font-size: 12px;
+    background-color: rgb(215, 98, 98);
+    font-size: 20px;
     border: none;
     cursor: pointer;
     width: 150px;
+    border: 1px solid black;
+    box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
+
 }
 
-.planten{
-    display: flex;
+.contactpagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
 }
 
-.planten-right{
-    margin-left: 70%;
-    order: 1;
+.social-media, .planten, .contact {
+  width: calc(33.33% - 10px); /* Adjust width and margin as needed */
+  margin-bottom: 20px;
 }
 
-.planten-right img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+.planten-right img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
 }
-
 /*end contact pagina*/
 
 
