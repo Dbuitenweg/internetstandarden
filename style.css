@@ -125,6 +125,33 @@ h3{
 /* werk pagina*/
 
 
+.categorieen{
+    border-bottom: 100%;
+}
+
+
+.flex, .flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projecten, .heel-holland-kookt{
+    margin-right: 5%;
+}
+
+.projecten, .pathe-project, .heel-holland-kookt, .albert-heijn-wk{
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.pathe-photo img{
+    margin-bottom: 5%;
+}
+
+
+
 
 .phyton-photo img, .pathe-photo img, .burger-photo img{
     width: 50%;
@@ -176,7 +203,7 @@ h3{
 .social-media h2{
     display: flex;
     justify-content:start ;
-    padding-left: 50px;
+    margin-left: 5%;
 }
 
 .contact{
@@ -184,6 +211,7 @@ h3{
     display: flex;
     flex-direction: column;
     margin-left: 5%;
+    margin-top: -150px;
     
 }
 
@@ -195,7 +223,7 @@ h3{
 .contact h2 {
     display: flex;
     justify-content:start ;
-    padding-left: 50px;
+    margin-left: 0%;
     padding-top: 50px;
 }
 
@@ -237,7 +265,7 @@ h3{
     font-size: 12px;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 150px;
 }
 
 .planten{
