@@ -1,12 +1,13 @@
-
-
 /* alles pagina*/
 
 body{           /* aanpassingen doen in de body*/
-    background:linear-gradient(rgb(215, 98, 98),white)
+    background:linear-gradient(rgb(215, 98, 98),white);
+    margin: 0;
+    overflow-x: hidden;
+    
 }
 
-main{
+main{          /*aanpassingen doen in de body*/
     width: 100%;
     float: left;
     height: fit-content;
@@ -14,16 +15,19 @@ main{
     font-size: 18px;
     padding-bottom: 50px;
     letter-spacing: 0.1rem;
-    
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
 }
 
-.body1, .body2, .body3{
+.body1, .body2, .body3{         /*aanpassingen doen in de 3 bodie*/
     margin-left: 150px;
     margin-right: 150px;
-
 }
 
-@media screen and (max-width: 800px){
+.body3{  /* bij derder pagina alle text lings hebben*/
+    text-align: left;
+}
+
+@media screen and (max-width: 800px){           /*@als het vreem kleiner dan 800px wordt wordt alles hierin aangepast*/
     .body1, .body2, .body3{
         margin-left: 5vw;
         margin-right: 5vw;
@@ -35,16 +39,17 @@ h1 {            /* de h1 zelf aanpassen*/
     justify-content: center;
 }
 
-h2{
+h2{             /*de h2 zeelf aanpassen*/
     padding-top: 5vh;
 }
 
-h3{
+h3{             /*de h3 zelf aanpassen*/
     padding-top: 3vh;
 }
 
 
-.head{
+
+.head{             /*de head zelf aanpassen*/
     display: flex;
     list-style-type: none;
     margin: -10px;
@@ -52,62 +57,77 @@ h3{
     justify-content: space-evenly;
     background-color: #f0f0f0;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);   
 }
 
-
-
-.head a{
+.head a{            /*de ancures aanpassen in de head*/
     text-decoration: none;  /*de lijnen weg halen van de anchors*/
     color: black;
-    
-
 }
 
-.head a:hover{
+.head a:hover{          /*de ancures aanpassen om te hoveren*/
     padding: 10px 20px;
     font-size: 25px;
     color:red;
     transition: all 0.3s ease;
-    
 }
  
-.head a:active {
-    
+.head a:active {            /*de ancures aanpassen  voor de active state*/
     color:darkred;
     padding: 10px 20px;
     margin: 10px;
 } 
+
+.footer-1{
+    background-color:lightcyan;
+    border-top: solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+   
+}
+
+.footer-1 a {
+    display: block;
+    color: black;
+    padding: 1%;
+}
+
+.footer-1 p{
+    font-size: 20px;
+    text-decoration:underline;
+    font-weight: bold;
+}
 
 /*end alles pagina*/  
 
 
 /* home pagina*/
 
-.introductie h2{
+.introductie h3{
+    border-bottom: solid black;
+    border-top: solid black;
+    padding-bottom: 5%;
+}
+
+.introductie h2{        /*de intriductie aanpassen*/
     display: flex;
     justify-content: center;
     padding-top: 0;
-
 }
-
 
 .first video{
     width: 10%;
     height: auto;
 }
 
-
-
 .overzicht h2 {
     display: flex;
     justify-content: center;
-    
-    
 }
-
-
-
 
 .ibiza img{
     width: 50%;
@@ -126,31 +146,34 @@ h3{
     }
 }
 
+
+
 /*end home pagina*/
 
 /* werk pagina*/
 
-
-
-
 .categorieen{
-    border-bottom: 100%;
     box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
     padding: 10px;
     margin-top: 40px;
     background-color:rgba(197, 194, 191, 0.605);
     border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .projecten{
     padding-left: 15%;
-    padding-right: 15%;
-    
+    padding-right: 15%; 
 }
 
 .flex, .flex2 {
     display: flex;
     justify-content: space-between;
+}
+
+.pathe-project h3, .heel-holland-kookt h3, .albert-heijn-wk h3{
+    font-weight: bolder;
 }
 
 .pathe-project{
@@ -162,7 +185,6 @@ h3{
     margin-right: 5%;
     margin-left: 5%;
     background-image: url(img/burger-logo2.png);
-    
 }
 .albert-heijn-wk{
     background-image: url(img/albertheijn-logo2.png);
@@ -179,10 +201,6 @@ h3{
 .pathe-photo img{
     margin-bottom: 5%;
 }
-
-
-
-
 
 .phyton-photo img, .pathe-photo img, .burger-photo img{
     width: 80%;
@@ -216,7 +234,6 @@ h3{
     
 }  
 
-
 /*end werk pagina*/
 
 /* about me pagina*/
@@ -224,30 +241,29 @@ h3{
 .body3 {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
-  .img-gif {
+.img-gif {
     flex: 1;
     margin: 10px;
-  }
+}
 
-  .img-gif video {
+
+.img-gif video {
     width: 80%; 
     height: auto;
     margin-top: 10%;
-  }
+}
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
    
     .img-gif {
       flex: 100%; 
     }
-  }
+}
 
-.sunset img{
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
+.over-mij{
+    border-bottom: solid black;
 }
 
 .werk-boven{
@@ -272,9 +288,6 @@ h3{
     }
 }
 
-    
-
-
 .social li{
     padding: 10px;
     margin-left: -30px;
@@ -295,7 +308,6 @@ h3{
     display: flex;
     justify-content:start ;
     margin-left: 0%;
-    
 }
 
 .input-field{
@@ -339,7 +351,6 @@ h3{
     width: 150px;
     border: 1px solid black;
     box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
-
 }
 
 .contactpagina {
@@ -360,17 +371,19 @@ h3{
   height: auto;
   border-radius: 10px;
 }
+
+@media screen and (max-width:950px) {
+    .social-media, .planten, .contact{
+        width: 100%;
+    }
+    .planten-right img{
+        margin-top: 5%;
+        width:50%;
+    }
+    .btnsubmit{
+        display: flex;
+        justify-content: left;
+        padding-left: 30px;
+    }
+}
 /*end contact pagina*/
-
-
-
-
-
-
-
-
-
-
-
-
-
