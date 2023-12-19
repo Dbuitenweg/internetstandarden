@@ -1,5 +1,5 @@
 /* alles pagina*/
-header, main, footer {
+header, main {
     width: 100%;
     box-sizing: border-box;
 }
@@ -12,14 +12,34 @@ body{           /* aanpassingen doen in de body*/
 
 main{          /*aanpassingen doen in de body*/
     width: 100%;
-    float: left;
-    height: fit-content;
     text-align: center;
     font-size: 18px;
     padding-bottom: 50px;
     letter-spacing: 0.1rem;
     font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     margin: 0;
+}   
+
+footer{
+    background-color:rgb(161, 160, 160);
+    margin-bottom: 0;
+    padding: 0;
+}
+footer h2{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+    color: black;
+}
+footer li{
+    list-style-type: none;
 }
 
 
@@ -48,7 +68,7 @@ h2{             /*de h2 zeelf aanpassen*/
     padding-top: 5vh;
 }
 
-h3{             /*de h3 zelf aanpassen*/
+p{             /*de p zelf aanpassen*/
     padding-top: 3vh;
 }
 
@@ -90,10 +110,6 @@ h3{             /*de h3 zelf aanpassen*/
 
 /* home pagina*/
 
-.footer-1 a{
-    display: flex;
-    justify-content: space-evenly;
-}
 .slinger-p{
     background-image: url(img/background3.jpeg);
     background-size: 100%;
@@ -106,7 +122,7 @@ h3{             /*de h3 zelf aanpassen*/
     color: white;
 }
 
-.introductie h3{
+.introductie p{
     border-bottom: solid black;
     padding-bottom: 5%;
 }
@@ -177,7 +193,7 @@ h3{             /*de h3 zelf aanpassen*/
     padding-bottom: 60px;
 }
 
-.pathe-project h3, .heel-holland-kookt h3, .albert-heijn-wk h3{
+.pathe-project p, .heel-holland-kookt p, .albert-heijn-wk p{
     font-weight: bolder;
 }
 
