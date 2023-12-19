@@ -106,6 +106,16 @@ h3{             /*de h3 zelf aanpassen*/
 
 
 /* home pagina*/
+.slinger-p{
+    background-image: url(img/background.jpeg);
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slinger-p h1, h2{
+    color: white;
+}
 
 .introductie h3{
     border-bottom: solid black;
